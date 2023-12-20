@@ -1,88 +1,108 @@
-### See https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md for comprehensive
-### documentation of the options in this file
+[buildPlans.IosevkaCustom]
+exportGlyphNames = true
+family           = "Iosevka Custom"
+noCvSs           = false
+serifs           = "sans"
+spacing          = "term"
 
-[buildPlans.IosevkaCustom] # <IosevkaCustom> is your plan name
-exportGlyphNames = false            # Set this to true for ligature support in Kitty (increased file size)
-family           = "Iosevka Custom" # Font menu family name
-serifs           = "sans"           # Optional; Values: `sans` or `slab`
-spacing          = "term"           # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
+[buildPlans.IosevkaCustom.variants.design]
+asterisk             = "penta-low"
+brace                = "curly-flat-boundary"
+cent                 = "bar-interrupted"
+dollar               = "interrupted"
+guillemet            = "curly"
+lig-double-arrow-bar = "without-notch"
+lig-neq              = "more-slanted-dotted"
+lig-single-arrow-bar = "without-notch"
+m                    = "short-leg-serifless"
+paren                = "large-contour"
+percent              = "rings-continuous-slash"
+punctuation-dot      = "square"
+question             = "smooth"
+seven                = "straight-serifless-crossbar"
+zero                 = "dotted"
 
-# webfontFormats = ['ttf', 'woff2']
-webfontFormats = ""
-###################################################################################################
-# Override default building weights
-# When buildPlans.<plan name>.weights is absent
-# All weights would built and mapped to default shape/CSS
-# IMPORTANT : Currently "menu" property only support 100, 200, 300, 400, 450, 500, 600, 700, 800, 900.
-#              and "shape" properly only supports number between 100 and 900 (inclusive).
-# 200: Extra Light
-# 300: Light
-# 400: Regular
-# 450: Book
-# 500: Medium
-# 600: Semibold
-# 700: Bold
-# 800: ExtraBold
+[buildPlans.IosevkaCustom.variants.italic]
+brace                = "curly-flat-boundary"
+cent                 = "bar-interrupted"
+dollar               = "interrupted"
+lig-double-arrow-bar = "without-notch"
+lig-neq              = "more-slanted-dotted"
+lig-single-arrow-bar = "without-notch"
+m                    = "short-leg-serifless"
+paren                = "large-contour"
+percent              = "rings-continuous-slash"
+question             = "smooth"
+zero                 = "dotted"
 
-[buildPlans.IosevkaCustom.weights.light]
+[buildPlans.IosevkaCustom.variants.oblique]
+brace                = "curly-flat-boundary"
+cent                 = "bar-interrupted"
+dollar               = "interrupted"
+lig-double-arrow-bar = "without-notch"
+lig-neq              = "more-slanted-dotted"
+lig-single-arrow-bar = "without-notch"
+m                    = "short-leg-serifless"
+paren                = "large-contour"
+percent              = "rings-continuous-slash"
+question             = "smooth"
+seven                = "straight-serifless-crossbar"
+zero                 = "dotted"
+
+[buildPlans.IosevkaCustom.ligations]
+inherits = "dlig"
+
+[buildPlans.IosevkaCustom.weights.Light]
 css   = 300
 menu  = 300
 shape = 300
 
-[buildPlans.IosevkaCustom.weights.regular]
+[buildPlans.IosevkaCustom.weights.Regular]
 css   = 400
 menu  = 400
 shape = 400
 
-[buildPlans.IosevkaCustom.weights.book]
+[buildPlans.IosevkaCustom.weights.Retina]
 css   = 450
 menu  = 450
 shape = 450
 
-[buildPlans.IosevkaCustom.weights.medium]
+[buildPlans.IosevkaCustom.weights.Medium]
 css   = 500
 menu  = 500
 shape = 500
 
-[buildPlans.IosevkaCustom.weights.bold]
+[buildPlans.IosevkaCustom.weights.SemiBold]
 css   = 600
 menu  = 600
 shape = 600
-###################################################################################################
 
-###################################################################################################
-# Override default building slope sets
-# When this section is absent, all slopes would be built.
+[buildPlans.IosevkaCustom.weights.Bold]
+css   = 700
+menu  = 700
+shape = 700
 
-[buildPlans.IosevkaCustom.slopes.Upright]
-angle = 0         # Angle in degrees. Valid range [0, 15]
-css   = "normal"  # Slope grade used for webfont CSS.      `normal`  | `oblique` | `italic`
-menu  = "upright" # Slope grade used for naming.           `upright` | `oblique` | `italic`
-shape = "upright" # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
-
-[buildPlans.IosevkaCustom.slopes.Italic]
-angle = 9.4
-css   = "italic"
-menu  = "italic"
-shape = "italic"
-# End slope section
-###################################################################################################
-
-###################################################################################################
-# Override default building widths
-# When buildPlans.<plan name>.widths is absent, all widths would built and mapped to
-# default values.
-# IMPORTANT : Currently "shape" property only supports numbers between 434 and 664 (inclusive),
-#             while "menu" only supports integers between 1 and 9 (inclusive).
-#             The "shape" parameter specifies the unit width, measured in 1/1000 em. The glyphs'
-#             width are equal to, or a simple multiple of the unit width.
-#             If you decide to use custom widths you have to define all the widths you plan to use,
-#             otherwise they will not be built.
+[buildPlans.IosevkaCustom.weights.ExtraBold]
+css   = 800
+menu  = 800
+shape = 800
 
 [buildPlans.IosevkaCustom.widths.Normal]
-css   = "normal" # "font-stretch' property of webfont CSS.
-menu  = 5        # Width grade for the font's names.
-shape = 500      # Unit Width, measured in 1/1000 em.
+css   = "normal"
+menu  = 5
+shape = 500
 
-# End width section
-###################################################################################################
+[buildPlans.IosevkaCustom.widths.Extended]
+css   = "expanded"
+menu  = 7
+shape = 600
+
+[buildPlans.IosevkaCustom.widths.SemiCondensed]
+css   = "semi-condensed"
+menu  = 4
+shape = 456
+
+[buildPlans.IosevkaCustom.widths.SemiExtended]
+css   = "semi-expanded"
+menu  = 6
+shape = 548

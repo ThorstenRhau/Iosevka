@@ -1,10 +1,11 @@
 # Iosevka
 
-All Iosevka font related configuration
+I use this repository for my personal Iosevka configuration.
 
 ## Documentation
 
 [Building Iosevka from Source - GitHub](https://github.com/be5invis/Iosevka/blob/main/doc/custom-build.md)
+[Iosevka Customizer](https://typeof.net/Iosevka/customizer)
 
 ### Dependencies
 
@@ -17,7 +18,7 @@ git clone --depth 1 https://github.com/be5invis/Iosevka.git
 Install needed software (on Mac)
 
 ```sh
-sudo brew install node ttfautohint
+brew install node ttfautohint
 ```
 
 ### Build Iosevka
@@ -32,7 +33,7 @@ npm install
 Copy or link the **_private-build-plans.toml_** file to the git repo root directory.
 
 ```sh
-npm run build -- contents::IosevkaCustom
+npm run build -- ttf::IosevkaCustom
 ```
 
 The font files are now located in the _dist_ directory
