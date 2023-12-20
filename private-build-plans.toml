@@ -1,14 +1,13 @@
 [buildPlans.IosevkaCustom]
-exportGlyphNames = false
+exportGlyphNames = true
 family           = "Iosevka Custom"
-noCvSs           = true
+noCvSs           = false
 serifs           = "sans"
 spacing          = "term"
 
 [buildPlans.IosevkaCustom.variants.design]
+asterisk             = "penta-low"
 brace                = "curly-flat-boundary"
-cent                 = "bar-interrupted"
-dollar               = "interrupted"
 lig-double-arrow-bar = "without-notch"
 lig-single-arrow-bar = "without-notch"
 m                    = "short-leg-serifless"
@@ -16,8 +15,16 @@ paren                = "large-contour"
 percent              = "rings-continuous-slash"
 zero                 = "dotted"
 
-[buildPlans.IosevkaCustom.ligations]
-inherits = "dlig"
+[buildPlans.IosevkaCustom.variants.italic]
+asterisk             = "penta-low"
+brace                = "curly-flat-boundary"
+k                    = "symmetric-connected-serifless"
+lig-double-arrow-bar = "without-notch"
+lig-single-arrow-bar = "without-notch"
+m                    = "short-leg-serifless"
+paren                = "large-contour"
+percent              = "rings-continuous-slash"
+zero                 = "dotted"
 
 [buildPlans.IosevkaCustom.weights.Light]
 css   = 300
