@@ -4,6 +4,10 @@ family           = "Iosevka Custom"
 noCvSs           = false
 serifs           = "sans"
 spacing          = "term"
+xHeight          = 400              # Font height
+
+[buildPlans.IosevkaCustom.metricOverride]
+leading = 1150 # Line height
 
 [buildPlans.IosevkaCustom.variants.design]
 asterisk             = "penta-low"
