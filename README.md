@@ -30,10 +30,10 @@ cd Iosevka
 npm install
 ```
 
-Copy or link the **_private-build-plans.toml_** file to the git repo root directory.
+Copy or link the **_private-build-plans.toml_** file to the git repo root directory. When you have done that you can build the Iosevka font. Please note that in the example below I use 5 build processes. These consume about 1GB or RAM and 1 CPU core each.
 
 ```sh
-npm run build -- ttf::IosevkaCustom
+npm run build -- ttf::IosevkaCustom --jCmd=6
 ```
 
 The font files are now located in the _dist_ directory
