@@ -17,18 +17,11 @@ lig-single-arrow-bar = "without-notch"
 m                    = "short-leg-serifless"
 paren                = "large-contour"
 percent              = "rings-continuous-slash"
+seven                = "straight-serifed"
 zero                 = "dotted"
 
 [buildPlans.IosevkaCustom.variants.italic]
-asterisk             = "penta-low"
-brace                = "curly-flat-boundary"
-k                    = "symmetric-connected-serifless"
-lig-double-arrow-bar = "without-notch"
-lig-single-arrow-bar = "without-notch"
-m                    = "short-leg-serifless"
-paren                = "large-contour"
-percent              = "rings-continuous-slash"
-zero                 = "dotted"
+k = "symmetric-connected-serifless"
 
 [buildPlans.IosevkaCustom.weights.Light]
 css   = 300
