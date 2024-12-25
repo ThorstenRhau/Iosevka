@@ -11,7 +11,6 @@ leading = 1100 # Line height
 
 [buildPlans.IosevkaCustom.variants.design]
 brace   = "curly-flat-boundary"
-m       = "earless-corner-double-arch-short-leg-serifless"
 paren   = "large-contour"
 percent = "rings-continuous-slash"
 seven   = "straight-serifed"
