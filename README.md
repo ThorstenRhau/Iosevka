@@ -4,7 +4,10 @@ I use this repository for my personal Iosevka configuration and documentation.
 
 ## Documentation
 
+The instruction:
 [Building Iosevka from Source - GitHub](https://github.com/be5invis/Iosevka/blob/main/doc/custom-build.md)
+
+The configuration builder:
 [Iosevka Customizer](https://typeof.net/Iosevka/customizer)
 
 ### Dependencies
@@ -31,10 +34,12 @@ cd Iosevka
 npm install
 ```
 
-Copy or link the **_private-build-plans.toml_** file from this repository to the
-git repo root directory. When you have done that you can build the Iosevka font.
-Please note that in the example below I use 6 build processes. These consume
-about 1GB or RAM and 1 CPU core each.
+> [!IMPORTANT]
+>
+> Copy or link the **_private-build-plans.toml_** file from this repository to
+> the git repo root directory. When you have done that you can build the Iosevka
+> font. Please note that in the example below I use 6 build processes. These
+> consume about 1GB or RAM and 1 CPU core each.
 
 ```sh
 npm run build -- ttf::IosevkaCustom --jCmd=6
