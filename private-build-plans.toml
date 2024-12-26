@@ -10,6 +10,11 @@ spacing          = "term"
 leading = 1100 # Line height
 
 [buildPlans.IosevkaCustom.weights.Regular]
+css   = 400
+menu  = 400
+shape = 400
+
+[buildPlans.IosevkaCustom.weights.Retina]
 css   = 450
 menu  = 450
 shape = 450
@@ -23,11 +28,6 @@ shape = 700
 css   = "normal"
 menu  = 5
 shape = 500
-
-[buildPlans.IosevkaCustom.widths.SemiCondensed]
-css   = "semi-condensed"
-menu  = 4
-shape = 456
 
 [buildPlans.IosevkaCustom.slopes.Upright]
 angle = 0
