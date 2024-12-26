@@ -14,7 +14,7 @@ css   = 400
 menu  = 400
 shape = 400
 
-[buildPlans.IosevkaCustom.weights.Retina]
+[buildPlans.IosevkaCustom.weights.Book]
 css   = 450
 menu  = 450
 shape = 450
