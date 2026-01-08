@@ -2,41 +2,83 @@
 exportGlyphNames = true
 family           = "Iosevka Custom"
 noCvSs           = false
+noLigation       = false
 serifs           = "sans"
 spacing          = "term"
-#xHeight          = 400 # Font height
-
-[buildPlans.IosevkaCustom.metricOverride]
-leading = 1100 # Line height
-
+[buildPlans.IosevkaCustom.variants.design]
+zero = "reverse-slashed"
+one = "base"
+l = "tailed"
+capital-i = "serifed"
+i = "hooky"
+j = "serifed"
+seven = "straight-serifless-crossbar"
+g = "double-storey"
+a = "double-storey"
+q = "diagonal-tailed"
+capital-q = "crossing"
+capital-g = "toothed-serifless-hooked"
+f = "flat-hook"
+t = "flat-hook"
+r = "compact"
+capital-d = "more-rounded-serifless"
+capital-m = "flat-bottom"
+capital-w = "straight-flat-top"
+two = "curly-neck-serifless"
+three = "two-arcs"
+four = "semi-open-serifless"
+five = "upright-arched-serifless"
+six = "closed-contour"
+eight = "crossing"
+nine = "closed-contour"
+asterisk = "hex-low"
+brace = "straight"
+at = "short"
+ampersand = "upper-open"
+percent = "dots"
+paren = "normal"
+[buildPlans.IosevkaCustom.variants.italic]
+a = "single-storey-tailed"
+e = "flat-crossbar"
+f = "flat-hook"
+i = "hooky"
+l = "tailed"
+y = "straight-turn"
+[buildPlans.IosevkaCustom.ligations]
+inherits = "default-calt"
 [buildPlans.IosevkaCustom.weights.Regular]
 css   = 400
 menu  = 400
 shape = 400
-
 [buildPlans.IosevkaCustom.weights.Book]
 css   = 450
 menu  = 450
 shape = 450
-
+[buildPlans.IosevkaCustom.weights.Medium]
+css   = 500
+menu  = 500
+shape = 500
 [buildPlans.IosevkaCustom.weights.Bold]
 css   = 700
 menu  = 700
 shape = 700
-
 [buildPlans.IosevkaCustom.widths.Normal]
 css   = "normal"
 menu  = 5
 shape = 500
-
+[buildPlans.IosevkaCustom.widths.Extended]
+css   = "expanded"
+menu  = 7
+shape = 576
 [buildPlans.IosevkaCustom.slopes.Upright]
 angle = 0
 css   = "normal"
 menu  = "upright"
 shape = "upright"
-
 [buildPlans.IosevkaCustom.slopes.Italic]
-angle = 10.4
+angle = 9.4
 css   = "italic"
 menu  = "italic"
 shape = "italic"
+[buildPlans.IosevkaCustom.metricOverride]
+leading = 1200
