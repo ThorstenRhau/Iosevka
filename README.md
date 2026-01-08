@@ -39,7 +39,7 @@ npm install
 > Copy or link the **_private-build-plans.toml_** file from this repository to
 > the git repo root directory. When you have done that you can build the Iosevka
 > font. Please note that in the example below I use 8 build processes. These
-> consume about 1GB or RAM and 1 CPU core each.
+> consume about 1GB of RAM and 1 CPU core each.
 
 ```sh
 # This is good for low res displays
